@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J.J. van Egmond Bloemengroothandel</title>
+  <style>
+    :root {
+      --primary: #ff0000;
+      --primary-hover: #0c0c0c;
+      --dark: #f50808;
+      --light: #f1f6fa;
+      --gray: #1b1a1a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+    body { color: #383737; background-color: var(--light); line-height: 1.6; }
+    
+    header { position: relative; height: 80px; background: #d10808; border-bottom: 1px solid #141414; }
+    .logo { display: none; }
+    header nav { position: absolute; top: 50%; right: 5%; transform: translateY(-50%); }
+    nav a { margin-left: 1.5rem; text-decoration: none; color: var(--gray); font-weight: 500; }
+    nav a:hover { color: var(--primary); }
+
+    .hero { text-align: center; padding: 0 1rem 5rem; max-width: 800px; margin: 0 auto; }
+    .hero-banner { display: block; width: 100vw; max-width: none; height:px; object-fit: fill; margin: 0 calc(50% - 50vw) 3rem; }
+    .hero h1 { font-size: 2.75rem; color: var(--dark); margin-bottom: 1rem; }
+    .hero p { font-size: 1.25rem; color: var(--gray); margin-bottom: 2rem; }
+    
+    .btn { display: inline-block; background: var(--primary); color: #fff; padding: 0.875rem 1.75rem; border-radius: 6px; text-decoration: none; font-weight: 600; }
+    .btn:hover { background: var(--primary-hover); }
+
+    .about { background: #faf8f8; padding: 4rem 5%; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; border-y: 1px solid #141516; }
+    .card { padding: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; text-align: center; }
+    .card h3 { color: var(--dark); margin-bottom: 0.5rem; }
+
+    .cta { text-align: center; padding: 4rem 1rem; background: var(--dark); color: #fff; }
+    .cta h2 { margin-bottom: 1rem; }
+    .cta p { color: #94a3b8; margin-bottom: 1.5rem; }
+    .cta .btn { background: #fff; color: var(--dark); font-size: 1.15rem; padding: 1rem 2rem; }
+    .cta .btn:hover { background: var(--primary-hover); color: #fff; }
+
+    footer { padding: 3rem 5%; background: #fff; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2rem; border-top: 1px solid #e2e8f0; }
+    footer h4 { color: var(--dark); margin-bottom: 0.75rem; }
+    .social-links { display: flex; align-items: center; gap: 0.75rem; }
+    .social-links a { display: grid; place-items: center; width: 44px; height: 44px; color: #fff; border-radius: 6px; text-decoration: none; transition: background-color 0.2s ease; }
+    .social-links a.instagram { background: #d62976; }
+    .social-links a.facebook { background: #1877f2; }
+    .social-links a:hover { background: var(--dark); }
+    .social-links svg { width: 24px; height: 24px; fill: currentColor; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="images/logo.jpg" alt="J.J. van Egmond Bloemengroothandel">
+    </div>
+    <nav>
+
+      <a href="#contact" class="btn" style="padding: 0.5rem 1rem;">Contact</a>
+      <a href="https://jjvanegmond.easyflor.shop/Account/Login?returnUrl=%2FAssortment" class="btn" style="padding: 0.5rem 1rem;">Bestel nu</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img class="hero-banner" src="images/logo.jpg" alt="J.J. van Egmond Bloemengroothandel">
+    <h1>Dagelijks geleverd van de hoogste kwaliteit</h1>
+    <p>Wij leveren dagelijks bloemen van de hoogste kwaliteit direct aan uw bloemenwinkel.</p>
+    <a href="https://jjvanegmond.easyflor.shop/Account/Login?returnUrl=%2FAssortment" class="btn">Ga naar de bestelpagina &rarr;</a>
+  </section>
+
+  <section class="about" id="about">
+    <div class="card">
+      <h3>Uitstekende Kwaliteit</h3>
+      <p>Dagelijks geleverd met de hoogste kwaliteit.</p>
+    </div>
+    <div class="card">
+      <h3>Persoonlijke aandacht</h3>
+      <p>Wij bieden persoonlijke aandacht en service aan onze klanten.</p>
+    </div>
+    <div class="card">
+      <h3>Familiebedrijf</h3>
+      <p>Wij zijn een familiebedrijf met meer dan 60 jaar ervaring als bloemengroothandel..</p>
+    </div>
+  </section>
+
+  <section class="cta">
+
+
+    <a href="https://jjvanegmond.easyflor.shop/Account/Login?returnUrl=%2FAssortment" class="btn">Bekijk onze voorraad!</a>
+  </section>
+
+  <footer id="contact">
+    <div>
+
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p style="color: var(--gray);">Email: info@jjvanegmond.nl</p>
+      <p style="color: var(--gray);">Phone: 0682676318</p>
+    </div>
+    <div>
+      <h4>Volg ons</h4>
+      <div class="social-links">
+        <a class="instagram" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A4.5 4.5 0 1 1 12 16.5 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 12 14.5 2.5 2.5 0 0 0 12 9.5ZM17.5 6a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 17.5 6Z"/></svg>
+        </a>
+        <a class="facebook" href="https://www.facebook.com/people/Johan-Van-Egmond/pfbid0AesLicsCuokqvSrkjd1pvnmZHUjeaJBtxri3z12LjpbtxxREo4wsk3xuRSDvBYEwl/?locale=nl_NL/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8h2.75l.4-3h-3.15V8.08c0-.87.24-1.46 1.5-1.46h1.8V3.94c-.31-.04-1.37-.14-2.6-.14-2.57 0-4.33 1.57-4.33 4.46V10H7.1v3h2.77v8h3.63Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
